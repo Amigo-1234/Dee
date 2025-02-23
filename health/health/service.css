@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background: #fafafa;
+    z-index: 1000;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.nav .logo-box{
+    display: flex;
+    align-items: center;
+}
+.nav .logo-box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.nav .logo-box .logo{
+    font-size: 20px;
+    margin: 10px;
+    color: #000;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    margin: 10px;
+    color: #000;
+    transition: 0.3s all ease-in;
+}
+.navbar a:hover{
+    color: lightgreen;
+    transition: 0.3s all ease-in;
+}
+#menu-icon{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.container{
+    width: 100%;
+    height: 260px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .container-box a{
+    color: #fff;
+    margin: 5px;
+}
+.service{
+    width: 100%;
+    background: #fafafa;
+}
+.service .service-text{
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.service .service-text span{
+    color: lightgreen;
+}
+.service .service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+}
+.service-content .service-content-box{
+    background: #fafafa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.service-content .service-content-box .service-content-box-img{
+    width: 100%;
+    height: 260px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.service-content .service-content-box .service-content-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.service-content-box .service-content-box-text{
+    position: absolute;
+    bottom: -100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: #1a24217c;
+    backdrop-filter: blur(30px);
+    transition: 0.4s all ease-in;
+}
+.service-content-box:hover .service-content-box-text{
+    bottom: 0;
+    transition: 0.4s all ease-in;
+}
+.service-content-box .service-content-box-text h4{
+    font-size: 1rem;
+    margin: 20% 10%;
+}
+.footer{
+    width: 100%;
+    background: #1a2421;
+}
+.footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.footer-content-box{
+    background: none;
+    margin: 10px;
+}
+.footer-content-about .footer-content-about-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-content-about-logo .footer-about-logo{
+    color: #fff;
+}
+.footer-content-about p{
+    margin: 10px;
+    color:#fff
+}
+.footer-content-about i{
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.footer-content-about-logo img{
+    width: 40px;
+    margin: 10px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+.footer-links h1{
+    color: #fff;
+}
+.footer-links a{
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s all ease-in;
+}
+.footer-links a:hover{
+    color: #fafafa;
+    transition: 0.3s all ease-in;
+}
+
+
+
+
+@media(max-width: 834px){
+    #menu-icon{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        background: #fafafa;
+        width: 260px;
+        height: 350px;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        display: flex;
+        transition: 0.4s all ease-in;
+    }
+    .navbar a{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .navbar.add{
+        right: 0;
+        transition: 0.4s all ease-in;
+    }
+    .logo{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+    }
+}

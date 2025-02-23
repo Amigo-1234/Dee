@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <i class="fa-solid fa-bars"  id="menu-icon"></i>
+            <div class="logo-box">
+                <img src="logo1.png" alt="">
+                <a href="index.html" class="logo">God Voice Family Health</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="#">Success Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="container-box">
+            <a href="index.html" class="active">Home/<span>appointment</span></a>
+        </div>
+    </section>
+
+
+    <section class="appointment">
+        <div class="appointment-content">
+            <div class="appointment-content-form">
+                <form action="">
+                    <div class="appointment-content-form-box">
+                        <h1 class="appointment-content-form-box-text">Book Appointment</h1>
+                        <div class="appointment-content-form-box-input">
+                            <input type="text" class="name" id="name" placeholder="Enter Name" required>
+                            <input type="email" class="email" id="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="appointment-content-form-box-input">
+                            <input type="number" class="number" id="number" placeholder="Enter Number" required>
+                            <input type="text" class="name" id="doctor" placeholder="Doctor Name" required>
+                        </div>
+                        <div class="appointment-content-form-box-input">
+                            <input type="date" class="date" id="date" placeholder="Enter Date" required>
+                            <input type="time" class="time" id="time" placeholder="Enter Tiem" required>
+                        </div>
+                        <textarea name="" id="" placeholder="Describe your problem"></textarea>
+                    </div>
+                    <button class="appointment-btn">Book An Appintment</button>
+                </form>
+            </div>
+
+            <div class="appintment-container">
+                <h5 class="appintment-container-text">Appointment</h5>
+                <div class="appintment-box-text">
+                    <h2>Book An Appointment To Visit <br> Our Doctor</h2>
+                    <p>I need to schedule an appointment with  Dr Osiyemi Abosede. <br> can you please let me know when you are available</p>
+                </div>
+                <div class="appointment-box">
+                    <div class="appointemt-box-content-text">
+                        <p>Call Us Now</p>
+                        <h3>+234 8037515187</h3>
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="appointemt-box-content-text">
+                        <p>Email Us Now</p>
+                        <h3>Gvmfertilityhospital <br>@gmail.com</h3>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script src="appointment.js"></script>
+</body>
+</html>
