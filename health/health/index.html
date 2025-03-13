@@ -73,7 +73,7 @@
         <div class="about-content">
             <div class="about-content-container-box">
                 <div class="about-content-box-img">
-                    <img src="about.jpg" alt="">
+                    <img src="head.jpg" alt="">
                 </div>
                 <div class="about-content-box-text">
                     <h1>About Us</h1>
@@ -90,7 +90,7 @@
             </div>
         </div>
     </section>
-    <div class="testimonials-header">Testimonials <br>2022/2023</div>
+    <div class="testimonials-header">Testimonials<br></div>
     <div class="testimonials-container">
       <div class="testimonial-image">
         <img src="testii/01.png" alt="Testimonial 1">
@@ -159,11 +159,89 @@
         <img src="testii/22.png" alt="Testimonial 3">
       </div>
     </div>
+    <div class="unique-header">Testimonials</div>
+    <div class="unique-slider-container">
+      <div class="unique-slider">
+        <div class="unique-slide">
+          <img src="scroll/01.png" alt="Testimonial 1">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/02.png" alt="Testimonial 2">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/03.png" alt="Testimonial 3">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/04.png" alt="Testimonial 4">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/05.png" alt="Testimonial 5">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/06.png" alt="Testimonial 3">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/07.png" alt="Testimonial 4">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/08.png" alt="Testimonial 5">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/09.png" alt="Testimonial 3">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/010.png" alt="Testimonial 4">
+        </div>
+        <div class="unique-slide">
+          <img src="scroll/011.png" alt="Testimonial 5">
+        </div>
+      </div>
+      <div class="unique-navigation">
+        <div class="unique-dot active" data-index="0"></div>
+        <div class="unique-dot" data-index="1"></div>
+        <div class="unique-dot" data-index="2"></div>
+        <div class="unique-dot" data-index="3"></div>
+        <div class="unique-dot" data-index="4"></div>
+        <div class="unique-dot" data-index="5"></div>
+        <div class="unique-dot" data-index="6"></div>
+        <div class="unique-dot" data-index="7"></div>
+        <div class="unique-dot" data-index="8"></div>
+        <div class="unique-dot" data-index="9"></div>
+        <div class="unique-dot" data-index="10"></div>
+      </div>
+    </div>
+    <script>
+      let currentIndex = 0;
+      const slider = document.querySelector('.unique-slider');
+      const slides = document.querySelectorAll('.unique-slide');
+      const dots = document.querySelectorAll('.unique-dot');
+  
+      function updateSlider() {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+  
+      function autoSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+      }
+  
+      dots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+          currentIndex = parseInt(e.target.dataset.index);
+          updateSlider();
+        });
+      });
+  
+      setInterval(autoSlide, 4000); // Slide every 4 seconds
+    </script>
     <section class="success-stories">
         <h1 class="success-stories-text">Success Stories</h1>
         <div class="success-stories-content">
             <div class="success-stories-content-img">
-                <img src="Success Stories.jpg" alt="">
+                <img src="head1.jpg" alt="">
             </div>
             <div class="success-stories-content-text">
                 <h1> Bringing Dreams to Life</h1>
