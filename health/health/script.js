@@ -39,22 +39,16 @@ if (menuIcon && navbar) {
     });
 }
 
-// Sliding Background Animation
-let index = 0;
-const slides = document.querySelector('.slides');
+const slider = document.getElementById('slider');
+const slides = document.querySelectorAll('.home-slide');
+let currentIndex = 0;
 
-function slideShow() {
-    index++;
-    if (index > 5) index = 0;
-    if (slides) {
-        slides.style.transform = `translateX(-${index * 100}vw)`;
+// Slide every 4 seconds, stop at the last image
+const slideInterval = setInterval(() => {
+    currentIndex++;
+    if (currentIndex < slides.length) {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    } else {
+        clearInterval(slideInterval); // Stop sliding at the last image
     }
-}
-setInterval(slideShow, 2000); // Change every 2 seconds
-
-// Responsive Navbar
-if (menuIcon && navbar) {
-    menuIcon.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
-}
+}, 4000); // 4 seconds per slide
