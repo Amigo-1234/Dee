@@ -254,10 +254,9 @@ header{
         padding: 20px;
     }
 }
-
 .content{
     width: 100%;
-    background: darkgreen;
+    background: lightgreen;
 }
 .content .content-box{
     display: grid;
@@ -476,8 +475,8 @@ header{
     margin: 5px;
     border: none;
     border-radius: 10px;
-    background: darkgreen;
-    color: #fff;
+    background: lightgreen;
+    color:white;
 }
 .footer{
     width: 100%;
