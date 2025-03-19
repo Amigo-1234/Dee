@@ -1,0 +1,62 @@
+/* Container to hold slider and content */
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background slider setup */
+.home-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Moves slider behind text */
+    display: flex;
+    animation: slide 40s infinite linear; /* Slows down the slider */
+}
+
+/* Individual slides */
+.home-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Text content stays on top */
+.home-content-text {
+    position: relative; /* Keeps it above the background */
+    z-index: 2; /* Higher than slider */
+    color: white; /* Ensures visibility */
+    text-align: center;
+    top: 40%;
+}
+
+.home-content-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animation for smooth sliding */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    12.5% { transform: translateX(-100%); }
+    25% { transform: translateX(-200%); }
+    37.5% { transform: translateX(-300%); }
+    50% { transform: translateX(-400%); }
+    62.5% { transform: translateX(-500%); }
+    75% { transform: translateX(-600%); }
+    87.5% { transform: translateX(-700%); }
+    100% { transform: translateX(0%); } /* Loop back */
+}

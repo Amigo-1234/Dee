@@ -97,7 +97,7 @@ header{
 .about-content-box-text .about-btn{
     width: 100px;
     height: 40px;
-    background: darkgreen;
+    background: lightgreen;
     color: #fff;
     margin: 10px;
     border: none;
@@ -133,7 +133,7 @@ header{
 }
 
 .faq-question:hover {
-    background: darkgreen;
+background: lightgreen;
 }
 
 .faq-answer {
@@ -217,7 +217,7 @@ header{
 }
 .appintment-container .appintment-container-text{
     padding: 1rem;
-    border: 1px solid darkgreen;
+    border: 1px solid lightgreen;
     width: 130px;
     border-radius: 10px;
 }
@@ -233,7 +233,7 @@ header{
     margin: 1rem;
 }
 .appintment-container .appointment-box .appointemt-box-content-text{
-    background: darkgreen;
+    background: lightgreen;
     color: #ffffff;
     margin: 10px;
     padding: 10px 50px;
